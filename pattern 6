@@ -1,0 +1,21 @@
+//In these patterns, if the row number is odd then the small letter alphabet is printed. If the row number is even then the capital letter alphabet is printed.
+#include<stdio.h>
+int main()
+{
+   int n;
+
+   printf("Enter the number of rows: ");
+   scanf("%d", &n);
+
+   for(int r=1; r<=n; r++)
+   {
+     for(int c=1; c<=n; c++)
+     {
+       if(r%2==0) printf("%3c", r+64);
+       else printf("%3c", r+96);
+     }
+     printf("\n");
+   }
+
+   return 0;
+}
