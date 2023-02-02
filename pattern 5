@@ -1,0 +1,20 @@
+//The below pattern is similar to the previous pattern program but instead of the lowercase letter, it has all uppercase letters in the pattern. The ASCII value of the character ‘A’ is 65.
+#include<stdio.h>
+int main()
+{
+   int n;
+
+   printf("Enter number of rows: ");
+   scanf("%d",&n);
+
+   for(int r=1; r<=n; r++)
+   {
+     for(int c=1; c<=n; c++)
+     {
+       printf("%3c",r+64);
+     }
+     printf("\n");
+   }
+
+   return 0;
+}
