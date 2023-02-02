@@ -1,0 +1,22 @@
+//The below pattern program is similar to the previous one but in this pattern, each Nth row contains the same N value. It is also a square matrix where the number of rows is equal to the number of columns.
+
+
+#include<stdio.h>
+int main()
+{
+   int n;
+
+   printf("Enter number of rows: ");
+   scanf("%d",&n);
+
+   for(int r=1; r<=n; r++)
+   {
+     for(int c=1; c<=n; c++)
+     {
+       printf("%3c",r+96);
+     }
+     printf("\n");
+   }
+
+   return 0;
+}
